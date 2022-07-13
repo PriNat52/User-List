@@ -1,0 +1,7 @@
+<h3><u>User Lists:</u></h3>
+<ul *ngFor="let i of nameList">
+  <app-full-details
+    [name]="i.name"
+    (details)="fullDetails($event)"
+  ></app-full-details>
+</ul>
