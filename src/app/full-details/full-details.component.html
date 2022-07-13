@@ -1,3 +1,9 @@
 <li (click)="onDetails(name)" (click)="click = !click">{{ name }}</li>
 
-<div *ngIf="click"></div>
+<div *ngIf="click">
+  <ul *ngFor="let i of fullAdress">
+    <li>Name: {{ i.username }}</li>
+    <li>Email: {{ i.email }}</li>
+    <li>Address: {{ i.street }} {{ i.suite }} {{ i.city }} {{ i.zip }}</li>
+  </ul>
+</div>
