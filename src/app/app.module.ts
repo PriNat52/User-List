@@ -5,12 +5,11 @@ import { DetailsService } from './details.service';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { FullDetailsComponent } from './full-details/full-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
-  declarations: [AppComponent, HelloComponent, FullDetailsComponent],
+  declarations: [AppComponent, FullDetailsComponent],
   bootstrap: [AppComponent],
   providers: [DetailsService],
 })
